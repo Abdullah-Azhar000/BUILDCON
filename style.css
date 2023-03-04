@@ -1,0 +1,123 @@
+body{
+	background: #f1fbbff;
+}
+.section-padding{
+	padding: 100px 0;
+}
+
+/* navbar */
+
+.navbar-nav a{
+	font-size: 15px;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand{
+	color: #000;
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+	color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+	color: #000;
+}
+.w-100{
+	height: 100vh;
+}
+.nav-link{
+	position: relative;
+}
+.nav-link::after{
+	opacity: 0;
+	content: '';
+	transition: all 0.2s;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	background-color: #ffc107 ;
+	bottom: 0;
+	left: 0;
+}
+.nav-link:hover::after{
+	opacity: 1;
+}
+
+/* carousal */
+
+.carousel-item{
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption{
+	bottom: 220px !important;
+	z-index: 2 !important;
+}
+.carousel-caption h5{
+	font-style: 45px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 25px;
+}
+.carousel-caption p{
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+/* linear bg */
+.carousel-inner::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+/* services */
+
+.services .card-body i{
+	font-size: 50px;
+}
+
+/* team */
+
+.team .card-body i{
+	font-size: 20px;
+}
+
+.portfolio .card{
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.team .card{
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* responsive css */
+
+@media (max-width:768px){
+	.navbar-nav{
+		text-align: center;
+	}
+	.carousel-caption{
+		bottom: 90px !important;
+	}
+	.carousel-caption h5{
+		font-size: 17px !important;
+	}
+	.carousel-caption a{
+		padding: 10px 15px !important;
+	}
+	.carousel-caption p{
+		width: 100% !important;
+		line-height: 1.6 !important;
+		font-size: 12px !important;
+	}
+}
